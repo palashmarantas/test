@@ -9,13 +9,13 @@ import (
 func main() {
 	fmt.Println("hello")
 
-	car := src.New()
-	bike := src.New()
+	c := src.NewCar("car")
+	b := src.NewBike("bike")
 
-	car.Start()
-	car.Stop()
+	c.Start()
+	c.Stop()
 
-	bike.Start()
-	bike.Stop()
+	b.Start()
+	b.Stop()
 
 }

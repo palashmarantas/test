@@ -1,1 +1,1 @@
-go build -a -installsuffix cgo -ldflags="-w -s" -o -o test
+go build -ldflags="-w -s" -o test

@@ -2,23 +2,24 @@ package src
 
 import (
 	"fmt"
-	"github.com/test/src/core"
+
+	"github.com/test/core"
 )
+
 type Bike struct {
-	name string
+	Name string
 }
 
-func New() core.Vechicle {
-	bike := &bike{name: "bike"}
-	return bike
+func NewBike(name string) core.Vehicle {
+	return &Bike{Name: name}
 }
 
-func (bike *Bike) Start()
-{
-   fmt.Println("bike started")
+func (bike *Bike) Start() int {
+	fmt.Println("bike started")
+	return 0
 }
 
-func (bike *Bike) Stop()
-{
-   fmt.Println("bike stopped")
+func (bike *Bike) Stop() int {
+	fmt.Println("bike stopped")
+	return 0
 }

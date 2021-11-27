@@ -1,8 +1,6 @@
 package core
 
-type Vechicle interface
-{
-    Start() 
-    Slow()
+type Vehicle interface {
+	Start() int
+	Stop() int
 }
-
